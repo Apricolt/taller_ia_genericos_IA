@@ -1,13 +1,7 @@
 # Taller 1 - Algoritmos Evolutivos / Algoritmos Geneticos
 
-### Javier Alejandro Ordoñez
-### River Alejandro Bonilla
-### Diego Alejandro Ocampo
-### Tomas Benavides
-### Dylan Santiago Rodriguez
-### Danilo Andrés Montezuma
 
-#Integrantes
+# Integrantes
 - Javier Alejandro Ordoñez
 - River Alejandro Bonilla
 - Diego Alejandro Ocampo
