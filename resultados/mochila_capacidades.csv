@@ -1,0 +1,7 @@
+﻿configuracion,corridas,valor_mejor,valor_peor,valor_promedio,desviacion,peso_mejor,capacidad,gen_mejor_promedio,poblacion_valida_%,mejor_invalida_%,optimo_dp,corridas_en_optimo_%,brecha_promedio_%,estrategia
+cap 152 (50% del peso total) / penalizacion debil,30,493,493,493.0,0.0,150,152,9.7,64.6,0.0,493,100.0,0.0,penalizacion debil
+cap 152 (50% del peso total) / penalizacion fuerte,30,493,482,491.4,3.74,152,152,24.6,74.0,0.0,493,83.3,0.318,penalizacion fuerte
+cap 152 (50% del peso total) / reparacion,30,493,493,493.0,0.0,150,152,1.8,100.0,0.0,493,100.0,0.0,reparacion
+cap 76 (25% del peso total) / penalizacion debil,30,282,282,282.0,0.0,76,76,8.3,44.6,0.0,282,100.0,0.0,penalizacion debil
+cap 76 (25% del peso total) / penalizacion fuerte,30,282,253,260.8,10.65,76,76,27.2,60.2,0.0,282,20.0,7.518,penalizacion fuerte
+cap 76 (25% del peso total) / reparacion,30,282,282,282.0,0.0,76,76,1.0,100.0,0.0,282,100.0,0.0,reparacion

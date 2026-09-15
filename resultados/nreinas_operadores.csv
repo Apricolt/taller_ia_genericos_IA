@@ -1,0 +1,9 @@
+﻿N,poblacion,tasa_mutacion,elitismo,cruce,corridas,tasa_exito_%,gens_promedio,gens_minimo,gens_maximo,conflictos_prom,tiempo_promedio_s,configuracion
+6,20,0.1,0,OX,50,96.0,33.3,1,210,0.04,0.0218,N=6 OX sin elitismo
+6,20,0.1,2,OX,50,98.0,51.7,1,283,0.02,0.0274,N=6 OX con elitismo
+6,20,0.1,0,PMX,50,56.0,11.1,1,233,0.44,0.0682,N=6 PMX sin elitismo
+6,20,0.1,2,PMX,50,42.0,17.8,1,233,0.58,0.0881,N=6 PMX con elitismo
+8,20,0.1,0,OX,50,96.0,37.3,1,211,0.04,0.0236,N=8 OX sin elitismo
+8,20,0.1,2,OX,50,86.0,56.0,1,296,0.14,0.0434,N=8 OX con elitismo
+8,20,0.1,0,PMX,50,88.0,37.5,1,248,0.12,0.0343,N=8 PMX sin elitismo
+8,20,0.1,2,PMX,50,80.0,48.2,1,289,0.2,0.0462,N=8 PMX con elitismo

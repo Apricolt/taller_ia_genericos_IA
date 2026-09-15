@@ -1,0 +1,4 @@
+﻿configuracion,corridas,mejor,peor,promedio,desviacion,gen_mejor_promedio,vecino_mas_cercano,optimo_exacto,brecha_promedio_%
+8 ciudades,10,263.39,263.39,263.39,0.0,4.6,263.39,263.39,-0.0
+10 ciudades,10,319.46,319.46,319.46,0.0,11.3,319.46,319.46,0.0
+15 ciudades,10,367.52,367.52,367.52,0.0,44.3,454.57,,

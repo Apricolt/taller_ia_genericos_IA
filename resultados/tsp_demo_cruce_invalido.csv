@@ -1,0 +1,2 @@
+﻿padre_1,padre_2,hijo_cruce_un_punto,ciudades_repetidas,ciudades_no_visitadas,es_ruta_valida
+"[5, 0, 1, 4, 2, 6, 3, 7]","[1, 6, 7, 2, 3, 4, 5, 0]","[5, 0, 1, 4, 3, 4, 5, 0]","[0, 4, 5]","[2, 6, 7]",False

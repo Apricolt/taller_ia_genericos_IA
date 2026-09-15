@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "devCommand": "npm run dev",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/api/:ruta*",
+      "destination": "https://CAMBIAR-POR-TU-SERVICIO.onrender.com/api/:ruta*"
+    }
+  ]
+}

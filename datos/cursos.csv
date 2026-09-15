@@ -1,0 +1,9 @@
+﻿id,curso,estudiantes,requiere_computadores,software_requerido,franjas_bloqueadas
+C1,Inteligencia Artificial,28,Si,Python,Vie 14:00-16:00
+C2,Bases de Datos,35,Si,SQL Server,-
+C3,Redes de Computadores,22,Si,-,Lun-Mie 09:00-11:00
+C4,Algoritmos,40,No,-,Lun-Mie 07:00-09:00
+C5,Ingenieria de Software,30,No,-,-
+C6,Machine Learning,18,Si,Python,-
+C7,Sistemas Operativos,25,Si,Linux,-
+C8,Calculo Diferencial,45,No,-,"Mar-Jue 09:00-11:00, Vie 14:00-16:00"

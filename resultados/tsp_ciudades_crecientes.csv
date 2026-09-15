@@ -1,0 +1,5 @@
+﻿configuracion,corridas,mejor,peor,promedio,desviacion,gen_mejor_promedio,vecino_mas_cercano,mejora_vs_voraz_%,dispersion_relativa_%
+10 ciudades,10,319.46,319.46,319.46,0.0,11.3,319.46,0.0,0.0
+15 ciudades,10,367.52,367.52,367.52,0.0,44.3,454.57,19.15,0.0
+30 ciudades,10,480.47,519.28,490.84,12.85,138.4,534.56,8.18,2.62
+50 ciudades,10,617.25,668.48,635.3,16.6,282.1,698.71,9.07,2.61

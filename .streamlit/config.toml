@@ -1,0 +1,11 @@
+# Se fija el tema claro para que coincida con el fondo blanco de las graficas
+# de matplotlib y para que el resaltado de filas de las tablas sea legible.
+[theme]
+base = "light"
+primaryColor = "#4C72B0"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

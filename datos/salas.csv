@@ -1,0 +1,5 @@
+﻿id,sala,capacidad,computadores,software_disponible
+S1,Sala de Computo A,36,Si,"Python, SQL Server, Linux"
+S2,Sala de Computo B,28,Si,"Python, Linux"
+S3,Aula 101,45,No,-
+S4,Aula 202,50,No,-

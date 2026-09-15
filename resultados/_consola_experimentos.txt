@@ -1,0 +1,207 @@
+
+##############################################################################
+# exp_nreinas.py
+##############################################################################
+BARRIDO PRINCIPAL: N x poblacion x tasa de mutacion
+  N=6 pob= 20 mut=0.05  exito=100.0%  gens=59.1
+  N=6 pob= 20 mut=0.1   exito= 96.7%  gens=58.7
+  N=6 pob= 20 mut=0.2   exito=100.0%  gens=39.1
+  N=6 pob= 50 mut=0.05  exito= 96.7%  gens=8.3
+  N=6 pob= 50 mut=0.1   exito=100.0%  gens=4.2
+  N=6 pob= 50 mut=0.2   exito=100.0%  gens=5.4
+  N=6 pob=100 mut=0.05  exito=100.0%  gens=2.0
+  N=6 pob=100 mut=0.1   exito=100.0%  gens=2.1
+  N=6 pob=100 mut=0.2   exito=100.0%  gens=1.9
+  N=8 pob= 20 mut=0.05  exito= 86.7%  gens=62.1
+  N=8 pob= 20 mut=0.1   exito= 86.7%  gens=52.0
+  N=8 pob= 20 mut=0.2   exito=100.0%  gens=21.7
+  N=8 pob= 50 mut=0.05  exito=100.0%  gens=6.8
+  N=8 pob= 50 mut=0.1   exito= 96.7%  gens=5.7
+  N=8 pob= 50 mut=0.2   exito=100.0%  gens=13.0
+  N=8 pob=100 mut=0.05  exito=100.0%  gens=3.4
+  N=8 pob=100 mut=0.1   exito=100.0%  gens=3.2
+  N=8 pob=100 mut=0.2   exito=100.0%  gens=3.9
+
+Tabla guardada en C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\nreinas_experimentos.csv
+
+ESTUDIO DE OPERADORES: OX vs PMX, con y sin elitismo
+  N=6 OX sin elitismo          exito= 96.0%  gens=33.3
+  N=6 OX con elitismo          exito= 98.0%  gens=51.7
+  N=6 PMX sin elitismo         exito= 56.0%  gens=11.1
+  N=6 PMX con elitismo         exito= 42.0%  gens=17.8
+  N=8 OX sin elitismo          exito= 96.0%  gens=37.3
+  N=8 OX con elitismo          exito= 86.0%  gens=56.0
+  N=8 PMX sin elitismo         exito= 88.0%  gens=37.5
+  N=8 PMX con elitismo         exito= 80.0%  gens=48.2
+
+Tabla guardada en C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\nreinas_operadores.csv
+
+Generando curvas de convergencia por tasa de mutacion...
+C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\nreinas_tasas_mutacion.png
+
+Experimentos de N-Reinas completados.
+
+##############################################################################
+# exp_tsp.py
+##############################################################################
+ESTUDIO A: instancias del enunciado (presupuesto amplio: pob=100, gen=300)
+   8 ciudades -> mejor=  263.39  peor=  263.39  promedio=  263.39  desv= 0.00
+  10 ciudades -> mejor=  319.46  peor=  319.46  promedio=  319.46  desv= 0.00
+  15 ciudades -> mejor=  367.52  peor=  367.52  promedio=  367.52  desv= 0.00
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\tsp_escalado.csv
+
+ESTUDIO B: dos tasas de mutacion (presupuesto ajustado: pob=30, gen=60)
+  tasa 0.05  -> mejor=  370.15  peor=  424.13  promedio=  393.87
+  tasa 0.2   -> mejor=  367.52  peor=  415.56  promedio=  382.71
+  tasa 0.9   -> mejor=  378.67  peor=  438.44  promedio=  399.07
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\tsp_tasas_mutacion.csv
+
+ESTUDIO C: operadores de cruce y mutacion (presupuesto ajustado)
+  OX   + swap       -> mejor=  367.52  promedio=  400.82  desv=23.43
+  OX   + inversion  -> mejor=  367.52  promedio=  382.71  desv=15.09
+  OX   + insercion  -> mejor=  367.52  promedio=  418.08  desv=34.89
+  PMX  + swap       -> mejor=  367.52  promedio=  414.90  desv=33.44
+  PMX  + inversion  -> mejor=  367.52  promedio=  391.08  desv=20.54
+  PMX  + insercion  -> mejor=  367.52  promedio=  404.15  desv=38.97
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\tsp_operadores.csv
+
+ESTUDIO D: efecto del elitismo (presupuesto ajustado)
+  sin elitismo         -> mejor=  367.52  peor=  430.41  promedio=  383.15
+  con elitismo (e=2)   -> mejor=  367.52  peor=  415.56  promedio=  382.71
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\tsp_elitismo.csv
+
+ESTUDIO E: aumento del numero de ciudades (presupuesto amplio)
+  10 ciudades -> promedio=  319.46  voraz=  319.46  desv=  0.00  dispersion= 0.00%
+  15 ciudades -> promedio=  367.52  voraz=  454.57  desv=  0.00  dispersion= 0.00%
+  30 ciudades -> promedio=  490.84  voraz=  534.56  desv= 12.85  dispersion= 2.62%
+  50 ciudades -> promedio=  635.30  voraz=  698.71  desv= 16.60  dispersion= 2.61%
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\tsp_ciudades_crecientes.csv
+
+DEMOSTRACION: cruce de un punto sobre permutaciones
+  padre_1               : [5, 0, 1, 4, 2, 6, 3, 7]
+  padre_2               : [1, 6, 7, 2, 3, 4, 5, 0]
+  hijo_cruce_un_punto   : [5, 0, 1, 4, 3, 4, 5, 0]
+  ciudades_repetidas    : [0, 4, 5]
+  ciudades_no_visitadas : [2, 6, 7]
+  es_ruta_valida        : False
+
+Experimentos del TSP completados.
+
+##############################################################################
+# exp_asignacion.py
+##############################################################################
+Tablas de cursos y salas guardadas en datos/
+
+ESTUDIO A: elitismo si/no x penalizar vs reparar
+  penalizar / sin elitismo     factibles=100.0%  dura=    0.0  blanda=  24.0  gen=13.0
+  penalizar / con elitismo     factibles=100.0%  dura=    0.0  blanda=  24.0  gen=10.9
+  reparar / sin elitismo       factibles=100.0%  dura=    0.0  blanda=  24.0  gen=5.2
+  reparar / con elitismo       factibles=100.0%  dura=    0.0  blanda=  24.0  gen=5.2
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\asignacion_elitismo_estrategia.csv
+
+ESTUDIO B: aumento del numero de cursos (4 salas x 5 franjas = 20 slots)
+   8 cursos ( 40.0% de los slots) / penalizar  -> factibles=100.0%  dura=     0.0
+   8 cursos ( 40.0% de los slots) / reparar    -> factibles=100.0%  dura=     0.0
+  12 cursos ( 60.0% de los slots) / penalizar  -> factibles=100.0%  dura=     0.0
+  12 cursos ( 60.0% de los slots) / reparar    -> factibles=100.0%  dura=     0.0
+  16 cursos ( 80.0% de los slots) / penalizar  -> factibles=100.0%  dura=     0.0
+  16 cursos ( 80.0% de los slots) / reparar    -> factibles=100.0%  dura=     0.0
+  20 cursos (100.0% de los slots) / penalizar  -> factibles= 40.0%  dura=   600.0
+  20 cursos (100.0% de los slots) / reparar    -> factibles=100.0%  dura=     0.0
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\asignacion_escalado.csv
+
+ESTUDIO C: cruce de un punto vs cruce uniforme (instancia base)
+  cruce un_punto   -> factibles=100.0%  total_promedio=24.0
+  cruce uniforme   -> factibles=100.0%  total_promedio=24.0
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\asignacion_cruces.csv
+
+ESTUDIO D: misma rejilla sobre la instancia apretada (20 cursos / 20 slots)
+  penalizar / sin elitismo     factibles=  0.0%  dura= 1933.3  blanda=  48.9  gen=91.0
+  penalizar / con elitismo     factibles= 40.0%  dura=  600.0  blanda=  34.7  gen=94.9
+  reparar / sin elitismo       factibles=100.0%  dura=    0.0  blanda=  22.1  gen=28.2
+  reparar / con elitismo       factibles=100.0%  dura=    0.0  blanda=  22.1  gen=20.8
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\asignacion_elitismo_estrategia_apretada.csv
+
+ESTUDIO E: cruces sobre la instancia apretada
+  cruce un_punto   -> factibles= 60.0%  total_promedio=438.1
+  cruce uniforme   -> factibles= 40.0%  total_promedio=634.7
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\asignacion_cruces_apretada.csv
+
+MEJOR HORARIO ENCONTRADO
+  Penalizacion dura 0 / blanda 24.0 / total 24.0
+  Violaciones: {'choque': 0, 'sobrecupo': 0, 'recurso': 0, 'franja_bloqueada': 0, 'desbalance': 2.4, 'holgura': 0}
+
+                           Lun-Mie 07:00-09:00     Lun-Mie 09:00-11:00            Mar-Jue 07:00-09:00              Mar-Jue 09:00-11:00                 Vie 14:00-16:00
+Sala de Computo A                               C2 Bases de Datos (35)                                 C1 Inteligencia Artificial (28)  C5 Ingenieria de Software (30)
+Sala de Computo B  C7 Sistemas Operativos (25)                          C3 Redes de Computadores (22)                                         C6 Machine Learning (18)
+Aula 101           C8 Calculo Diferencial (45)                                     C4 Algoritmos (40)                                                                 
+Aula 202                                                                                                                                                              
+
+Experimentos de asignacion completados.
+
+##############################################################################
+# exp_mochila.py
+##############################################################################
+Instancia base: 15 objetos, peso total 304, valor total 792
+
+ESTUDIO A: dos capacidades x penalizar vs reparar (15 objetos)
+  cap 152 (50% del peso total) / penalizacion debil valor=  493.0  optimo=  493  en_optimo=100.0%  pob_valida= 64.6%  mejor_invalida=  0.0%
+  cap 152 (50% del peso total) / penalizacion fuerte valor=  491.4  optimo=  493  en_optimo= 83.3%  pob_valida= 74.0%  mejor_invalida=  0.0%
+  cap 152 (50% del peso total) / reparacion        valor=  493.0  optimo=  493  en_optimo=100.0%  pob_valida=100.0%  mejor_invalida=  0.0%
+  cap 76 (25% del peso total) / penalizacion debil valor=  282.0  optimo=  282  en_optimo=100.0%  pob_valida= 44.6%  mejor_invalida=  0.0%
+  cap 76 (25% del peso total) / penalizacion fuerte valor=  260.8  optimo=  282  en_optimo= 20.0%  pob_valida= 60.2%  mejor_invalida=  0.0%
+  cap 76 (25% del peso total) / reparacion         valor=  282.0  optimo=  282  en_optimo=100.0%  pob_valida=100.0%  mejor_invalida=  0.0%
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\mochila_capacidades.csv
+
+ESTUDIO B: efecto de la tasa de mutacion (presupuesto ajustado)
+  tasa 0.01  -> valor_promedio=  470.8  en_optimo=  3.3%  brecha=  4.51%
+  tasa 0.05  -> valor_promedio=  488.4  en_optimo= 50.0%  brecha= 0.933%
+  tasa 0.1   -> valor_promedio=  491.8  en_optimo= 73.3%  brecha= 0.243%
+  tasa 0.3   -> valor_promedio=  484.4  en_optimo= 10.0%  brecha= 1.751%
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\mochila_tasas_mutacion.csv
+
+ESTUDIO C: elitismo y operador de cruce (presupuesto ajustado)
+  un_punto / sin elitismo    valor_promedio=  488.8  en_optimo= 50.0%
+  un_punto / con elitismo    valor_promedio=  488.4  en_optimo= 50.0%
+  uniforme / sin elitismo    valor_promedio=  490.0  en_optimo= 56.7%
+  uniforme / con elitismo    valor_promedio=  486.6  en_optimo= 46.7%
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\mochila_elitismo_cruce.csv
+
+ESTUDIO D: escalado del numero de objetos
+  15 objetos / penalizacion debil      brecha= -0.027%  en_optimo= 90.0%  pob_valida= 63.7%  mejor_invalida=  3.3%
+  15 objetos / penalizacion fuerte     brecha=  0.933%  en_optimo= 50.0%  pob_valida= 73.9%  mejor_invalida=  0.0%
+  15 objetos / reparacion              brecha=    0.0%  en_optimo=100.0%  pob_valida=100.0%  mejor_invalida=  0.0%
+  30 objetos / penalizacion debil      brecha=   0.14%  en_optimo= 23.3%  pob_valida= 46.8%  mejor_invalida= 43.3%
+  30 objetos / penalizacion fuerte     brecha=  2.569%  en_optimo=  0.0%  pob_valida= 73.4%  mejor_invalida=  0.0%
+  30 objetos / reparacion              brecha=   0.29%  en_optimo= 33.3%  pob_valida=100.0%  mejor_invalida=  0.0%
+  50 objetos / penalizacion debil      brecha=  1.604%  en_optimo=  0.0%  pob_valida= 45.2%  mejor_invalida= 56.7%
+  50 objetos / penalizacion fuerte     brecha=  3.827%  en_optimo=  0.0%  pob_valida= 69.7%  mejor_invalida=  0.0%
+  50 objetos / reparacion              brecha=  0.182%  en_optimo= 13.3%  pob_valida=100.0%  mejor_invalida=  0.0%
+  100 objetos / penalizacion debil     brecha=  5.127%  en_optimo=  0.0%  pob_valida= 45.4%  mejor_invalida= 56.7%
+  100 objetos / penalizacion fuerte    brecha=  7.843%  en_optimo=  0.0%  pob_valida= 69.2%  mejor_invalida=  0.0%
+  100 objetos / reparacion             brecha=  0.736%  en_optimo=  0.0%  pob_valida=100.0%  mejor_invalida=  0.0%
+  -> C:\Users\Javier\Desktop\Inteligencia Artificial\Taller1_Geneticos\resultados\mochila_escalado.csv
+
+SOLUCION FINAL (capacidad 152)
+  Algoritmo genetico: valor 493, peso 150/152, 7 objetos, encontrada en la generacion 3
+  Optimo exacto (DP): valor 493
+objeto  peso  valor  ratio seleccionado
+    O1    13     31   2.38           No
+    O2    28     54   1.93           No
+    O3     8     24   3.00           Si
+    O4    12     37   3.08           Si
+    O5    16     28   1.75           No
+    O6    15     44   2.93           Si
+    O7    36     54   1.50           No
+    O8    32     85   2.66           Si
+    O9    37    146   3.95           Si
+   O10    39    136   3.49           Si
+   O11     7     21   3.00           Si
+   O12     9     21   2.33           No
+   O13    35     71   2.03           No
+   O14     7     18   2.57           No
+   O15    10     22   2.20           No
+
+Experimentos de la mochila completados.
+
+Todos los experimentos completados en 322.9 segundos.

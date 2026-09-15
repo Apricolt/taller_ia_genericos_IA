@@ -1,0 +1,5 @@
+﻿configuracion,corridas,valor_mejor,valor_peor,valor_promedio,desviacion,peso_mejor,capacidad,gen_mejor_promedio,poblacion_valida_%,mejor_invalida_%,optimo_dp,corridas_en_optimo_%,brecha_promedio_%
+mutacion = 0.01,30,493,424,470.8,17.2,150,152,12.7,93.7,0.0,493,3.3,4.51
+mutacion = 0.05,30,493,468,488.4,6.69,150,152,22.2,73.9,0.0,493,50.0,0.933
+mutacion = 0.1,30,493,484,491.8,2.26,150,152,24.0,68.4,0.0,493,73.3,0.243
+mutacion = 0.3,30,493,475,484.4,5.99,150,152,17.8,62.9,0.0,493,10.0,1.751

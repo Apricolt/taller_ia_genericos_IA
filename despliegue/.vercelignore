@@ -1,0 +1,21 @@
+# Que NO se sube al despliegue del frontend en Vercel.
+# El limite de subida es 100 MB y todo lo que sobra alarga cada deploy.
+
+# El backend es Python y vive en Render, no en Vercel.
+ga/
+problemas/
+experimentos/
+*.py
+requirements.txt
+
+# Salidas de los experimentos: decenas de PNG y CSV que el frontend no sirve.
+# Si alguna grafica se muestra en la web, muevela a la carpeta publica del
+# frontend y borra esa linea de aqui.
+resultados/
+datos/
+informe/
+
+__pycache__/
+*.pyc
+.venv/
+venv/

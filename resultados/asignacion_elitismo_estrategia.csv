@@ -1,0 +1,5 @@
+﻿configuracion,corridas,factibles_%,dura_promedio,blanda_promedio,total_mejor,total_peor,total_promedio,gen_mejor_promedio
+penalizar / sin elitismo,30,100.0,0.0,24.0,24,24,24.0,13.0
+penalizar / con elitismo,30,100.0,0.0,24.0,24,24,24.0,10.9
+reparar / sin elitismo,30,100.0,0.0,24.0,24,24,24.0,5.2
+reparar / con elitismo,30,100.0,0.0,24.0,24,24,24.0,5.2

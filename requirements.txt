@@ -1,0 +1,10 @@
+# Taller 1 - Algoritmos Geneticos
+# Versiones fijadas a las verificadas en el entorno de desarrollo (Python 3.13.2)
+
+# Nucleo: motor genetico, problemas y experimentos
+numpy==2.4.4
+pandas==2.3.2
+matplotlib==3.10.7
+
+# Aplicativo web (entrega punto 5). Los scripts de terminal no lo necesitan.
+streamlit==1.56.0

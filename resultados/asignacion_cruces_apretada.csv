@@ -1,0 +1,3 @@
+﻿configuracion,corridas,factibles_%,dura_promedio,blanda_promedio,total_mejor,total_peor,total_promedio,gen_mejor_promedio
+cruce un_punto,30,60.0,400.0,38.1,28,1051,438.1,93.9
+cruce uniforme,30,40.0,600.0,34.7,35,1045,634.7,94.9

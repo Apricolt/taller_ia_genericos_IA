@@ -1,0 +1,18 @@
+# Cache de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Configuracion de herramientas locales (no forma parte de la entrega)
+.claude/
+.vercel/
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -1,0 +1,7 @@
+﻿configuracion,corridas,mejor,peor,promedio,desviacion,gen_mejor_promedio,cruce,mutacion
+OX + swap,10,367.52,434.25,400.82,23.43,42.0,OX,swap
+OX + inversion,10,367.52,415.56,382.71,15.09,46.8,OX,inversion
+OX + insercion,10,367.52,490.72,418.08,34.89,46.2,OX,insercion
+PMX + swap,10,367.52,464.58,414.9,33.44,53.2,PMX,swap
+PMX + inversion,10,367.52,438.58,391.08,20.54,48.6,PMX,inversion
+PMX + insercion,10,367.52,476.54,404.15,38.97,51.3,PMX,insercion

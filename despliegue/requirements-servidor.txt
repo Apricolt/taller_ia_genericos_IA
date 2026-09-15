@@ -1,0 +1,22 @@
+# Dependencias del backend en Render.  Copialo a la raiz como requirements.txt
+# cuando el backend exista (Render busca requirements.txt en la raiz del repo).
+#
+# Versiones fijadas a las que ya estan instaladas y funcionando en tu maquina,
+# para que el servidor sea identico al entorno de desarrollo.
+
+# Ya las usa el codigo actual (ga/, problemas/, experimentos/).
+numpy==2.4.4
+pandas==2.3.2
+matplotlib==3.10.7
+
+# Solo para exponer el codigo por HTTP.  Los scripts y experimentos siguen
+# funcionando desde la terminal sin esto.
+Flask==3.1.3
+
+# Servidor de produccion que ejecuta Flask en Render.  No hace falta en local.
+gunicorn==26.2.0
+
+# CORS: necesario si el frontend queda en Vercel (otro dominio) y llama a esta
+# API.  Sin esto el navegador bloquea las peticiones.  Si acabas sirviendo el
+# frontend desde el mismo Render, se puede quitar.
+Flask-Cors==6.0.5

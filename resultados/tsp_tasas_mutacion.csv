@@ -1,0 +1,4 @@
+﻿configuracion,corridas,mejor,peor,promedio,desviacion,gen_mejor_promedio
+mutacion = 0.05,10,370.15,424.13,393.87,14.92,44.8
+mutacion = 0.2,10,367.52,415.56,382.71,15.09,46.8
+mutacion = 0.9,10,378.67,438.44,399.07,17.08,49.1

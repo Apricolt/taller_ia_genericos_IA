@@ -1,0 +1,43 @@
+# Plano del backend para Render.  NO esta activo todavia: Render solo lee este
+# archivo si esta en la RAIZ del repositorio, asi que muevelo un nivel arriba
+# (a Taller1_Geneticos/render.yaml) cuando el backend exista.
+#
+# Se llama "Infrastructure as Code": en vez de rellenar el formulario web de
+# Render a mano cada vez, el servicio queda descrito aqui y se recrea igual
+# siempre.  En Render: New > Blueprint > apuntar al repo.
+
+services:
+  - type: web
+    name: geneticos-api
+    runtime: python
+    plan: free
+    region: oregon
+
+    # Render clona el repo y ejecuta esto antes de arrancar.
+    buildCommand: pip install -r requirements.txt
+
+    # gunicorn es el servidor de produccion; el `app.run()` de Flask es solo
+    # para desarrollo y Render lo mataria.  Ajusta `api:app` al archivo y a la
+    # variable reales cuando los crees:  archivo api.py  ->  app = Flask(...)
+    #
+    # $PORT lo asigna Render, no es fijo: escucharlo mal es el error #1 aqui.
+    #
+    # --timeout 120 porque una corrida de algoritmo genetico puede tardar mas
+    # que los 30 s por defecto y gunicorn mataria al worker a media ejecucion.
+    startCommand: gunicorn api:app --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 120
+
+    # Render pega aqui cada cierto tiempo para saber si el servicio vive.
+    # Crea esa ruta devolviendo 200, o comenta esta linea.
+    healthCheckPath: /api/salud
+
+    envVars:
+      # Misma version que la de tu maquina (Python 3.13.2), para que no
+      # aparezcan diferencias de comportamiento entre local y servidor.
+      - key: PYTHON_VERSION
+        value: "3.13.2"
+
+      # Backend de matplotlib sin ventana.  ga/estadisticas.py ya hace
+      # matplotlib.use("Agg"), pero nreinas.py y tsp.py importan pyplot por su
+      # cuenta; esta variable cubre tambien ese caso.
+      - key: MPLBACKEND
+        value: Agg
