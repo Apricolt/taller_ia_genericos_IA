@@ -1,10 +1,14 @@
 # Taller 1 - Algoritmos Geneticos
-# Versiones fijadas a las verificadas en el entorno de desarrollo (Python 3.13.2)
+#
+# Se declaran versiones MINIMAS y no versiones exactas. Una plataforma de
+# despliegue no corre necesariamente la misma version de Python que el equipo
+# de desarrollo, y un pin exacto sin rueda disponible para esa version hace
+# fallar TODA la instalacion, dejando la aplicacion sin ninguna dependencia.
 
-# Nucleo: motor genetico, problemas y experimentos
-numpy==2.4.4
-pandas==2.3.2
-matplotlib==3.10.7
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.7
 
-# Aplicativo web (entrega punto 5). Los scripts de terminal no lo necesitan.
-streamlit==1.56.0
+# streamlit deliberadamente SIN version exacta: Streamlit Community Cloud
+# instala la suya y un pin puede entrar en conflicto con ella.
+streamlit>=1.30
