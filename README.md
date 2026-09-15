@@ -7,6 +7,14 @@
 ### Dylan Santiago Rodriguez
 ### Danilo Andrés Montezuma
 
+#Integrantes
+- Javier Alejandro Ordoñez
+- River Alejandro Bonilla
+- Diego Alejandro Ocampo
+- Tomas Benavides
+- Dylan Santiago Rodriguez
+- Danilo Andrés Montezuma
+
 Inteligencia Artificial. Implementacion, experimentacion y analisis de algoritmos
 geneticos sobre cuatro problemas de optimizacion combinatoria.
 
