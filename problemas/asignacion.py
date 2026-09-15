@@ -118,8 +118,13 @@ TIPOS_BLANDOS = ("desbalance", "holgura")
 HOLGURA_TOLERADA = 10  # sillas vacias que no se castigan
 
 
-def guardar_tablas():
-    """Exporta las tablas de cursos y salas a datos/ para incluirlas en el informe."""
+def tablas_dataframes():
+    """Devuelve las tablas de cursos y salas como DataFrames, SIN escribir nada.
+
+    Se separa de guardar_tablas() porque el aplicativo web solo necesita
+    mostrarlas: escribir en disco en cada carga de pagina es innecesario y
+    falla en plataformas de despliegue con sistema de archivos de solo lectura.
+    """
     df_cursos = pd.DataFrame([{
         "id": c["id"], "curso": c["nombre"], "estudiantes": c["estudiantes"],
         "requiere_computadores": "Si" if c["computadores"] else "No",
@@ -133,6 +138,15 @@ def guardar_tablas():
         "software_disponible": ", ".join(s["software"]) or "-",
     } for s in SALAS])
 
+    return df_cursos, df_salas
+
+
+def guardar_tablas():
+    """Exporta las tablas de cursos y salas a datos/ para incluirlas en el informe.
+
+    La usan los scripts de terminal y los experimentos, no el aplicativo web.
+    """
+    df_cursos, df_salas = tablas_dataframes()
     df_cursos.to_csv(ruta_dato("cursos.csv"), index=False, encoding="utf-8-sig")
     df_salas.to_csv(ruta_dato("salas.csv"), index=False, encoding="utf-8-sig")
     return df_cursos, df_salas

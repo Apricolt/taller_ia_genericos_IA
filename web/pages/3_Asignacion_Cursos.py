@@ -54,7 +54,7 @@ A.PESOS["holgura"] = peso_holgura
 
 # ------------------------------- Datos de entrada -------------------------
 tab_cursos, tab_salas = st.tabs(["Tabla de cursos", "Tabla de salas"])
-df_cursos, df_salas = A.guardar_tablas()
+df_cursos, df_salas = A.tablas_dataframes()  # sin escribir en disco
 tab_cursos.dataframe(df_cursos, use_container_width=True, hide_index=True)
 tab_salas.dataframe(df_salas, use_container_width=True, hide_index=True)
 
