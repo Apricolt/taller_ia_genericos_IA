@@ -1,0 +1,9 @@
+# Normaliza los finales de linea: en el repositorio siempre LF, en el disco de
+# cada quien lo que corresponda a su sistema. Evita que Windows genere cambios
+# fantasma en archivos que nadie edito.
+* text=auto eol=lf
+
+# Archivos binarios: git no debe tocarlos nunca.
+*.png binary
+*.docx binary
+*.pdf binary
